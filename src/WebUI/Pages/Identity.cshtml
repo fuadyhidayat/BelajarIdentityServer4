@@ -1,0 +1,11 @@
+﻿@page
+@model WebUI.Pages.IdentityModel
+
+<h1>Hellooooww</h1>
+
+@foreach (var claim in User.Claims)
+{
+    <div>
+        @claim.Type : @claim.Value (@claim.ValueType)
+    </div>
+}
